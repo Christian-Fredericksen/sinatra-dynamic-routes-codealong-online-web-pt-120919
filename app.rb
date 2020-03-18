@@ -21,7 +21,7 @@ class App < Sinatra::Base
   end
   
   get "/multiply" do
-    @answer = params[:num1 * :num2]
+    answer = params[:num1, :num2]
     "The answer is #{@answer}!"
   end
 end
